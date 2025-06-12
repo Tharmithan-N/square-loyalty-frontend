@@ -1,35 +1,3 @@
-// import { useState } from 'react';
-// import api from '../api/axios';
-
-// const Redeem = () => {
-//   const [points, setPoints] = useState('');
-
-//   const handleRedeem = async () => {
-//     try {
-//       const response = await api.post('/redeem', { points: Number(points) });
-//       alert(response.data.message || 'Points redeemed successfully!');
-//       setPoints('');
-//     } catch (err) {
-//       alert(err.response?.data?.error || 'Error redeeming points');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Redeem Loyalty Points</h2>
-//       <input
-//         type="number"
-//         placeholder="Enter points"
-//         value={points}
-//         onChange={(e) => setPoints(e.target.value)}
-//       />
-//       <button onClick={handleRedeem}>Redeem</button>
-//     </div>
-//   );
-// };
-
-// export default Redeem;
-
 
 import { useState } from 'react';
 import { Form, InputNumber, Button, Card, Typography, message } from 'antd';

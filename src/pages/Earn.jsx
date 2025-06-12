@@ -1,35 +1,3 @@
-// import { useState } from 'react';
-// import api from '../api/axios';
-
-// const Earn = () => {
-//   const [points, setPoints] = useState('');
-
-//   const handleEarn = async () => {
-//     try {
-//       const response = await api.post('/earn', { points: Number(points) });
-//       alert(response.data.message || 'Points earned successfully!');
-//       setPoints('');
-//     } catch (err) {
-//       alert(err.response?.data?.error || 'Error earning points');
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <h2>Earn Loyalty Points</h2>
-//       <input
-//         type="number"
-//         placeholder="Enter points"
-//         value={points}
-//         onChange={(e) => setPoints(e.target.value)}
-//       />
-//       <button onClick={handleEarn}>Earn</button>
-//     </div>
-//   );
-// };
-
-// export default Earn;
-
 
 import { useState } from 'react';
 import { Card, Typography, InputNumber, Button, message } from 'antd';

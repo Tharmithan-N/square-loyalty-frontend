@@ -1,20 +1,3 @@
-// import { Link } from 'react-router-dom';
-
-// const Navbar = () => {
-//   return (
-//     <nav style={{ padding: '1rem', background: '#f0f0f0' }}>
-//       <Link to="/" style={{ marginRight: '1rem' }}>Login</Link>
-//       <Link to="/balance" style={{ marginRight: '1rem' }}>Balance</Link>
-//       <Link to="/earn" style={{ marginRight: '1rem' }}>Earn</Link>
-//       <Link to="/redeem" style={{ marginRight: '1rem' }}>Redeem</Link>
-//       <Link to="/history">History</Link>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
-
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, Button, Drawer } from 'antd';
@@ -42,7 +25,7 @@ const Navbar = () => {
         justifyContent: 'space-between',
         alignItems: 'center',
         padding: '0.5rem 1rem',
-        backgroundColor: '#001529', // AntD default dark header color
+        backgroundColor: '#001529', 
       }}>
         <div style={{ color: 'white', fontWeight: 'bold', fontSize: '1.2rem' }}>
           Loyalty App
@@ -65,7 +48,7 @@ const Navbar = () => {
           type="primary"
           icon={<MenuOutlined />}
           onClick={showDrawer}
-          style={{ display: 'none' }} // hidden by default
+          style={{ display: 'none' }}
         />
       </nav>
 

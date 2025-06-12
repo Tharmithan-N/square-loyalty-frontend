@@ -1,35 +1,3 @@
-// import { useEffect, useState } from 'react';
-// import api from '../api/axios';
-
-// const Balance = () => {
-//   const [balance, setBalance] = useState(null);
-//   const [loading, setLoading] = useState(true);
-
-//   const fetchBalance = async () => {
-//     try {
-//       const res = await api.get('/balance');
-//       setBalance(res.data.balance || 0);
-//     } catch (err) {
-//       alert(err.response?.data?.error || 'Failed to fetch balance');
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   useEffect(() => {
-//     fetchBalance();
-//   }, []);
-
-//   return (
-//     <div>
-//       <h2>Loyalty Balance</h2>
-//       {loading ? <p>Loading...</p> : <p>Your balance is: <strong>{balance} points</strong></p>}
-//     </div>
-//   );
-// };
-
-// export default Balance;
-
 
 import { useEffect, useState } from 'react';
 import { Card, Typography, Spin, message } from 'antd';
