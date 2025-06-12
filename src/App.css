@@ -1,0 +1,85 @@
+/* app.css */
+
+#root {
+  flex: 1; /* fill available height inside body */
+  display: flex;
+  flex-direction: column;
+  padding: 2rem; /* optional spacing */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* You can customize your app card or sections here */
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: inherit;
+}
+
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background-color: #121212;
+  color: #eee;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 300px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  border-color: #646cff;
+  outline: none;
+  background-color: #1a1a1a;
+}
+
+button {
+  max-width: 150px;
+  margin-top: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #4c51bf;
+  color: white;
+}
+
+/* Responsive utility */
+
+@media (max-width: 480px) {
+  #root {
+    padding: 1rem;
+  }
+
+  input[type="number"],
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    max-width: 100%;
+  }
+
+  button {
+    max-width: 100%;
+  }
+}
